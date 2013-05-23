@@ -1,7 +1,8 @@
 Description
 ===========
 
-Installs and configures Apache Ant & Ivy
+Chef cookbook to install and configure Apache Ant & Ivy, with 
+optional JSch support.
 
 Requirements
 ============
@@ -18,10 +19,23 @@ The following Opscode cookbooks are dependencies:
 Attributes
 ==========
 
+* `ant[:dir]`
+    - Java library directory (defaults to /usr/share/java)
+
+* `ant[:links]`
+    - Ant library directory (defaults to /usr/share/ant/lib)
+
+* `ant[:jsch_jar]`
+    - Name of the JSch jar file.
+
+* `ant[:jsch_mirror]`
+    - Mirror from where we will download JSch.
+
 Usage
 =====
 
-Simply include the recipe where you want Apache Ant & Ivy installed.
+If you need Ant & Ivy only, include default recipe. Otherwise,
+include recipe ant::jsch.
 
 TODO
 ====

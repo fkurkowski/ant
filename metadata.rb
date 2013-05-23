@@ -12,3 +12,4 @@ end
 end
 
 recipe "ant::default", "Installs and configures Ant"
+recipe "ant::jsch", "Install and configures Ant with JSch support"
