@@ -34,7 +34,7 @@ Attributes
 Usage
 =====
 
-If you need Ant & Ivy only, include default recipe. Otherwise,
+If you need only Ant & Ivy, include the default recipe. Otherwise,
 include recipe ant::jsch.
 
 TODO
